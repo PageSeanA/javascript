@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    p{
+        color:red;
+        font-size: large;
+    }
+
+</style>
+</head>
+<body>
+    
+
+
+    <p id="demo"></p>
+
+    <script>
+    
+    // try{
+    //     allllert("Hello World")
+    // }
+
+    // catch(error){
+
+    //     let p = document.getElementById('demo');
+
+    //     p.textContent = error.message
+
+    // } 
+
+//     var num = 1;                                                                 //slide 8/12 - Range Error***
+// try {
+//     num.toPrecision(500);   // A number cannot have 500 significant digits
+// }
+// catch(err) {
+//     document.getElementById("demo").innerHTML = err.name;
+// }
+
+// try {
+//   eval("alert('Hello)");   // Missing ' will produce an error                //slide 9/12 - Syntax Error***
+// }
+// catch(err) {
+//   document.getElementById("demo").innerHTML = err.name;
+// }
+
+// var num = 1;                                                                    //slide 9/12 - Type Error***
+// try {
+//     num.toUpperCase();   // You cannot convert a number to upper case
+// }
+// catch(err) {
+//     document.getElementById("demo").innerHTML = err.name;
+// }
+
+// var x;                                                                          //slide 10/12 - Reference Error***
+// try {
+//     x = y + 1;   // y cannot be referenced (used)
+// }
+// catch(err) {
+//     document.getElementById("demo").innerHTML = err.name;
+// }
+
+// try {                                                                               //slide 10/12 - URI Error***
+//   decodeURI("%%%");   // You cannot URI decode percent signs
+// }
+// catch(err) {
+//   document.getElementById("demo").innerHTML = err.name;
+// }
+
+division = (a, b) => {
+
+    try{
+
+    let div = a/b;
+
+    return div;
+
+    }
+
+    catch(e){
+
+        if(e instnceof Infinity){
+
+                let p = document.getElementById("demo")
+                return e.message
+        }
+        else{
+            return "Can't determine error."
+        }
+    }
+
+    }
+
+    console.log(division(3,0));
+
+
+
+
+    </script>
+</body>
+</html>
